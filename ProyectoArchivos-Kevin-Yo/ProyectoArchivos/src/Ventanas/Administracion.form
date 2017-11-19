@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="TabOpciones" alignment="0" min="-2" pref="712" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="145" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="BrnCerrar" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="btnGrupos" alignment="0" max="32767" attributes="0"/>
+                      <Component id="BtnDarBAja" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jButton2" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="LfotoPerfil" min="-2" pref="98" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="LfotoPerfil" min="-2" pref="68" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jLabel1" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jButton2" min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="BtnDarBAja" min="-2" pref="41" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="38" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnGrupos" min="-2" pref="39" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="BrnCerrar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="TabOpciones" min="-2" pref="479" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="71" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bienvenido:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LfotoPerfil">
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="TabOpciones">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="PMantenimiento">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Mantenimiento">
+                <Property name="tabTitle" type="java.lang.String" value="Mantenimiento"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="TabMantemiento" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="TabMantemiento" min="-2" pref="428" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="TabMantemiento">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="jPanel2">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Nuevo Usuario">
+                        <Property name="tabTitle" type="java.lang.String" value="Nuevo Usuario"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Escritorio" min="-2" pref="490" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Escritorio" alignment="0" pref="400" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JDesktopPane" name="Escritorio">
+                      <Properties>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[483, 325]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="490" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel3">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Busqueda Administrativa">
+                        <Property name="tabTitle" type="java.lang.String" value="Busqueda Administrativa"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lbNContraseña1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lbCorreo1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lbCumpleaños1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lbTeléfono1" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="tfNCorreo1" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
+                                                  <Component id="tfNTeléfono1" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="lbNContraseñaNueva1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="cbDía1" min="-2" pref="48" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="cbMes1" min="-2" pref="57" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="cbAño1" min="-2" pref="73" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="tfNContraseña1" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfNContraseñaNueva1" alignment="0" min="-2" pref="198" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="BtnDarBajaAd" min="-2" max="-2" attributes="0"/>
+                                          <Component id="BtnGuardarAd" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="240" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="TfBusquedaAd" min="-2" pref="577" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="BtnBuscarAd" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jScrollPane3" alignment="0" min="-2" pref="303" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="BtnBuscarAd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TfBusquedaAd" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="BtnDarBajaAd" min="-2" pref="41" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                      <Component id="BtnGuardarAd" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="lbNContraseña1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfNContraseña1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfNContraseñaNueva1" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <Component id="lbNContraseñaNueva1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="lbCumpleaños1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbDía1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbMes1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbAño1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lbCorreo1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfNCorreo1" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="tfNTeléfono1" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="lbTeléfono1" min="-2" pref="19" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="85" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextField" name="TfBusquedaAd">
+                    </Component>
+                    <Component class="javax.swing.JButton" name="BtnBuscarAd">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Buscar"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnBuscarAdActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="BtnDarBajaAd">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Dar de Baja"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnDarBajaAdActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="BtnGuardarAd">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Guardar Datos"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnGuardarAdActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbNContrase&#xf1;a1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Contrase&#xf1;a"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JPasswordField" name="tfNContrase&#xf1;a1">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbNContrase&#xf1;aNueva1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Nueva Contrase&#xf1;a"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JPasswordField" name="tfNContrase&#xf1;aNueva1">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbCumplea&#xf1;os1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Fecha Nacimiento"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbD&#xed;a1">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="32">
+                            <StringItem index="0" value=" "/>
+                            <StringItem index="1" value="01"/>
+                            <StringItem index="2" value="02"/>
+                            <StringItem index="3" value="03"/>
+                            <StringItem index="4" value="04"/>
+                            <StringItem index="5" value="05"/>
+                            <StringItem index="6" value="06"/>
+                            <StringItem index="7" value="07"/>
+                            <StringItem index="8" value="08"/>
+                            <StringItem index="9" value="09"/>
+                            <StringItem index="10" value="10"/>
+                            <StringItem index="11" value="11"/>
+                            <StringItem index="12" value="12"/>
+                            <StringItem index="13" value="13"/>
+                            <StringItem index="14" value="14"/>
+                            <StringItem index="15" value="15"/>
+                            <StringItem index="16" value="16"/>
+                            <StringItem index="17" value="17"/>
+                            <StringItem index="18" value="18"/>
+                            <StringItem index="19" value="19"/>
+                            <StringItem index="20" value="20"/>
+                            <StringItem index="21" value="21"/>
+                            <StringItem index="22" value="22"/>
+                            <StringItem index="23" value="23"/>
+                            <StringItem index="24" value="24"/>
+                            <StringItem index="25" value="25"/>
+                            <StringItem index="26" value="26"/>
+                            <StringItem index="27" value="27"/>
+                            <StringItem index="28" value="28"/>
+                            <StringItem index="29" value="29"/>
+                            <StringItem index="30" value="30"/>
+                            <StringItem index="31" value="31"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbMes1">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="13">
+                            <StringItem index="0" value=" "/>
+                            <StringItem index="1" value="ene"/>
+                            <StringItem index="2" value="feb"/>
+                            <StringItem index="3" value="mar"/>
+                            <StringItem index="4" value="abr"/>
+                            <StringItem index="5" value="may"/>
+                            <StringItem index="6" value="jun"/>
+                            <StringItem index="7" value="jul"/>
+                            <StringItem index="8" value="ago"/>
+                            <StringItem index="9" value="sep"/>
+                            <StringItem index="10" value="oct"/>
+                            <StringItem index="11" value="nov"/>
+                            <StringItem index="12" value="dic"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbA&#xf1;o1">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="66">
+                            <StringItem index="0" value=" "/>
+                            <StringItem index="1" value="2017"/>
+                            <StringItem index="2" value="2016"/>
+                            <StringItem index="3" value="2015"/>
+                            <StringItem index="4" value="2014"/>
+                            <StringItem index="5" value="2013"/>
+                            <StringItem index="6" value="2012"/>
+                            <StringItem index="7" value="2011"/>
+                            <StringItem index="8" value="2010"/>
+                            <StringItem index="9" value="2009"/>
+                            <StringItem index="10" value="2008"/>
+                            <StringItem index="11" value="2007"/>
+                            <StringItem index="12" value="2006"/>
+                            <StringItem index="13" value="2005"/>
+                            <StringItem index="14" value="2004"/>
+                            <StringItem index="15" value="2003"/>
+                            <StringItem index="16" value="2002"/>
+                            <StringItem index="17" value="2001"/>
+                            <StringItem index="18" value="2000"/>
+                            <StringItem index="19" value="1999"/>
+                            <StringItem index="20" value="1998"/>
+                            <StringItem index="21" value="1997"/>
+                            <StringItem index="22" value="1996"/>
+                            <StringItem index="23" value="1995"/>
+                            <StringItem index="24" value="1994"/>
+                            <StringItem index="25" value="1993"/>
+                            <StringItem index="26" value="1992"/>
+                            <StringItem index="27" value="1991"/>
+                            <StringItem index="28" value="1990"/>
+                            <StringItem index="29" value="1989"/>
+                            <StringItem index="30" value="1988"/>
+                            <StringItem index="31" value="1987"/>
+                            <StringItem index="32" value="1986"/>
+                            <StringItem index="33" value="1985"/>
+                            <StringItem index="34" value="1984"/>
+                            <StringItem index="35" value="1983"/>
+                            <StringItem index="36" value="1982"/>
+                            <StringItem index="37" value="1981"/>
+                            <StringItem index="38" value="1980"/>
+                            <StringItem index="39" value="1979"/>
+                            <StringItem index="40" value="1978"/>
+                            <StringItem index="41" value="1977"/>
+                            <StringItem index="42" value="1976"/>
+                            <StringItem index="43" value="1975"/>
+                            <StringItem index="44" value="1974"/>
+                            <StringItem index="45" value="1973"/>
+                            <StringItem index="46" value="1972"/>
+                            <StringItem index="47" value="1971"/>
+                            <StringItem index="48" value="1970"/>
+                            <StringItem index="49" value="1969"/>
+                            <StringItem index="50" value="1965"/>
+                            <StringItem index="51" value="1964"/>
+                            <StringItem index="52" value="1963"/>
+                            <StringItem index="53" value="1962"/>
+                            <StringItem index="54" value="1961"/>
+                            <StringItem index="55" value="1960"/>
+                            <StringItem index="56" value="1959"/>
+                            <StringItem index="57" value="1958"/>
+                            <StringItem index="58" value="1957"/>
+                            <StringItem index="59" value="1956"/>
+                            <StringItem index="60" value="1955"/>
+                            <StringItem index="61" value="1954"/>
+                            <StringItem index="62" value="1953"/>
+                            <StringItem index="63" value="1952"/>
+                            <StringItem index="64" value="1951"/>
+                            <StringItem index="65" value="1950"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfNCorreo1">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbCorreo1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Correo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbTel&#xe9;fono1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfNTel&#xe9;fono1">
+                      <Properties>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[10, 20]"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Descripcion"/>
+                      </Properties>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextArea" name="TADescriptor1">
+                          <Properties>
+                            <Property name="columns" type="int" value="20"/>
+                            <Property name="rows" type="int" value="5"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel1">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Usuario">
+                        <Property name="tabTitle" type="java.lang.String" value="Usuario"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="btnImagen" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                              <Component id="BtnGuardar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="363" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbNContraseña" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbNContraseñaNueva" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lbCorreo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbCumpleaños" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbTeléfono" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="cbDía" min="-2" pref="48" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="cbMes" min="-2" pref="57" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Component id="cbAño" min="-2" pref="73" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="tfNContraseña" max="32767" attributes="0"/>
+                                                  <Component id="tfNContraseñaNueva" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="tfNCorreo" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
+                                                  <Component id="tfNTeléfono" alignment="1" min="-2" pref="197" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                                      <Component id="LModificarDatos" min="-2" pref="143" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane2" alignment="0" min="-2" pref="301" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Component id="LModificarDatos" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbNContraseña" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfNContraseña" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="lbNContraseñaNueva" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfNContraseñaNueva" min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbCumpleaños" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbDía" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbMes" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cbAño" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbCorreo" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfNCorreo" min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="tfNTeléfono" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="lbTeléfono" min="-2" pref="19" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" pref="95" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="btnImagen" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BtnGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JComboBox" name="cbMes">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="13">
+                            <StringItem index="0" value=" "/>
+                            <StringItem index="1" value="ene"/>
+                            <StringItem index="2" value="feb"/>
+                            <StringItem index="3" value="mar"/>
+                            <StringItem index="4" value="abr"/>
+                            <StringItem index="5" value="may"/>
+                            <StringItem index="6" value="jun"/>
+                            <StringItem index="7" value="jul"/>
+                            <StringItem index="8" value="ago"/>
+                            <StringItem index="9" value="sep"/>
+                            <StringItem index="10" value="oct"/>
+                            <StringItem index="11" value="nov"/>
+                            <StringItem index="12" value="dic"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbA&#xf1;o">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="66">
+                            <StringItem index="0" value=" "/>
+                            <StringItem index="1" value="2017"/>
+                            <StringItem index="2" value="2016"/>
+                            <StringItem index="3" value="2015"/>
+                            <StringItem index="4" value="2014"/>
+                            <StringItem index="5" value="2013"/>
+                            <StringItem index="6" value="2012"/>
+                            <StringItem index="7" value="2011"/>
+                            <StringItem index="8" value="2010"/>
+                            <StringItem index="9" value="2009"/>
+                            <StringItem index="10" value="2008"/>
+                            <StringItem index="11" value="2007"/>
+                            <StringItem index="12" value="2006"/>
+                            <StringItem index="13" value="2005"/>
+                            <StringItem index="14" value="2004"/>
+                            <StringItem index="15" value="2003"/>
+                            <StringItem index="16" value="2002"/>
+                            <StringItem index="17" value="2001"/>
+                            <StringItem index="18" value="2000"/>
+                            <StringItem index="19" value="1999"/>
+                            <StringItem index="20" value="1998"/>
+                            <StringItem index="21" value="1997"/>
+                            <StringItem index="22" value="1996"/>
+                            <StringItem index="23" value="1995"/>
+                            <StringItem index="24" value="1994"/>
+                            <StringItem index="25" value="1993"/>
+                            <StringItem index="26" value="1992"/>
+                            <StringItem index="27" value="1991"/>
+                            <StringItem index="28" value="1990"/>
+                            <StringItem index="29" value="1989"/>
+                            <StringItem index="30" value="1988"/>
+                            <StringItem index="31" value="1987"/>
+                            <StringItem index="32" value="1986"/>
+                            <StringItem index="33" value="1985"/>
+                            <StringItem index="34" value="1984"/>
+                            <StringItem index="35" value="1983"/>
+                            <StringItem index="36" value="1982"/>
+                            <StringItem index="37" value="1981"/>
+                            <StringItem index="38" value="1980"/>
+                            <StringItem index="39" value="1979"/>
+                            <StringItem index="40" value="1978"/>
+                            <StringItem index="41" value="1977"/>
+                            <StringItem index="42" value="1976"/>
+                            <StringItem index="43" value="1975"/>
+                            <StringItem index="44" value="1974"/>
+                            <StringItem index="45" value="1973"/>
+                            <StringItem index="46" value="1972"/>
+                            <StringItem index="47" value="1971"/>
+                            <StringItem index="48" value="1970"/>
+                            <StringItem index="49" value="1969"/>
+                            <StringItem index="50" value="1965"/>
+                            <StringItem index="51" value="1964"/>
+                            <StringItem index="52" value="1963"/>
+                            <StringItem index="53" value="1962"/>
+                            <StringItem index="54" value="1961"/>
+                            <StringItem index="55" value="1960"/>
+                            <StringItem index="56" value="1959"/>
+                            <StringItem index="57" value="1958"/>
+                            <StringItem index="58" value="1957"/>
+                            <StringItem index="59" value="1956"/>
+                            <StringItem index="60" value="1955"/>
+                            <StringItem index="61" value="1954"/>
+                            <StringItem index="62" value="1953"/>
+                            <StringItem index="63" value="1952"/>
+                            <StringItem index="64" value="1951"/>
+                            <StringItem index="65" value="1950"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfNCorreo">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfNTel&#xe9;fono">
+                      <Properties>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[10, 20]"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JPasswordField" name="tfNContrase&#xf1;aNueva">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbNContrase&#xf1;a">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Contrase&#xf1;a"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbCorreo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Correo"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbTel&#xe9;fono">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cbD&#xed;a">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="32">
+                            <StringItem index="0" value=" "/>
+                            <StringItem index="1" value="01"/>
+                            <StringItem index="2" value="02"/>
+                            <StringItem index="3" value="03"/>
+                            <StringItem index="4" value="04"/>
+                            <StringItem index="5" value="05"/>
+                            <StringItem index="6" value="06"/>
+                            <StringItem index="7" value="07"/>
+                            <StringItem index="8" value="08"/>
+                            <StringItem index="9" value="09"/>
+                            <StringItem index="10" value="10"/>
+                            <StringItem index="11" value="11"/>
+                            <StringItem index="12" value="12"/>
+                            <StringItem index="13" value="13"/>
+                            <StringItem index="14" value="14"/>
+                            <StringItem index="15" value="15"/>
+                            <StringItem index="16" value="16"/>
+                            <StringItem index="17" value="17"/>
+                            <StringItem index="18" value="18"/>
+                            <StringItem index="19" value="19"/>
+                            <StringItem index="20" value="20"/>
+                            <StringItem index="21" value="21"/>
+                            <StringItem index="22" value="22"/>
+                            <StringItem index="23" value="23"/>
+                            <StringItem index="24" value="24"/>
+                            <StringItem index="25" value="25"/>
+                            <StringItem index="26" value="26"/>
+                            <StringItem index="27" value="27"/>
+                            <StringItem index="28" value="28"/>
+                            <StringItem index="29" value="29"/>
+                            <StringItem index="30" value="30"/>
+                            <StringItem index="31" value="31"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnImagen">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Nueva Foto de Perfil"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnImagenActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="LModificarDatos">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="18" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Modificar Datos"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbNContrase&#xf1;aNueva">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Nueva Contrase&#xf1;a"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JPasswordField" name="tfNContrase&#xf1;a">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lbCumplea&#xf1;os">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Fecha Nacimiento"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="BtnGuardar">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Guardar Datos"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnGuardarActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTextArea" name="TADescriptor">
+                          <Properties>
+                            <Property name="columns" type="int" value="20"/>
+                            <Property name="rows" type="int" value="5"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Descripcion"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="PBusqueda">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Busqueda">
+                <Property name="tabTitle" type="java.lang.String" value="Busqueda"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="TfBusquedaNoAd" min="-2" pref="588" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="BtnBuscar" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jInternalFrame1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="LBusqueNoAd" min="-2" pref="471" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BtnBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TfBusquedaNoAd" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="LBusqueNoAd" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jInternalFrame1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="BtnBuscar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Buscar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnBuscarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TfBusquedaNoAd">
+            </Component>
+            <Component class="javax.swing.JLabel" name="LBusqueNoAd">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="1"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JInternalFrame" name="jInternalFrame1">
+              <Properties>
+                <Property name="visible" type="boolean" value="true"/>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="303" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="1096" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="Solocitudes">
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CLicpanel"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Solicitudes">
+                <Property name="tabTitle" type="java.lang.String" value="Solicitudes"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="FrameSolicitudes" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="BtnSolicitud" max="32767" attributes="0"/>
+                          <Component id="BtnVerAmigos" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="236" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
+                              <Component id="BtnSolicitud" min="-2" pref="52" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="BtnVerAmigos" min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="FrameSolicitudes" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JInternalFrame" name="FrameSolicitudes">
+              <Properties>
+                <Property name="visible" type="boolean" value="true"/>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="310" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="1138" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Component class="javax.swing.JButton" name="BtnSolicitud">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Solicitudes"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnSolicitudActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="BtnVerAmigos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Amigos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnVerAmigosActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Mensajes">
+                <Property name="tabTitle" type="java.lang.String" value="Mensajes"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="cbMAmigos2" max="32767" attributes="0"/>
+                                  <Component id="jLabel6" pref="258" max="32767" attributes="0"/>
+                                  <Component id="jScrollPane6" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane5" min="-2" pref="268" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btnMActualizar" max="32767" attributes="0"/>
+                                  <Component id="jButton3" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jScrollPane1" min="-2" pref="354" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="cbMAmigos" min="-2" pref="147" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="cbTipo" min="-2" pref="101" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="btnEnviar" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="tfMEmisor" pref="135" max="32767" attributes="0"/>
+                                          <Component id="tfMReceptor" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="btnMEliminar" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfMFecha" pref="135" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbMAmigos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnEnviar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfMEmisor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfMReceptor" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfMFecha" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnMEliminar" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Component id="btnMActualizar" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane5" min="-2" pref="194" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cbMAmigos2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane6" min="-2" pref="175" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="42" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Broadway" size="14" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="MENSAJES PUBLICOS:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Broadway" size="14" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="MENSAJES PRIVADOS:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbMAmigos2">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Broadway" size="14" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="ESCRIBIR MENSAJE:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Para:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnMActualizar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Actualizar Mensajes"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMActualizarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbMAmigos">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="tfNMensaje">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JComboBox" name="cbTipo">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="2">
+                    <StringItem index="0" value="P&#xfa;blico"/>
+                    <StringItem index="1" value="Privado"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEnviar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Enviar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEnviarActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="tfPublico">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel8">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Broadway" size="14" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="ELIMINAR MENSAJE:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="tfPrivado">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Emisor:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel10">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Receptor:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel11">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fecha &amp; Hora"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="tfMEmisor">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tfMReceptor">
+            </Component>
+            <Component class="javax.swing.JTextField" name="tfMFecha">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnMEliminar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Eliminar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMEliminarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Actualizar Amigos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="BtnDarBAja">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Dar de Baja"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnDarBAjaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BrnCerrar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cerrar Sesion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BrnCerrarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Backup"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnGrupos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Grupos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGruposActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reorganizar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
