@@ -60,7 +60,7 @@ public class Listener extends Thread {
                             grupoEmisor = parameter.split("\\{")[2].replace("}","").split(",")[1].split(":")[1];                           
                             boolean existe = false;
                             
-                            if(grupoReceptor.equals("1")){
+                            if(grupoReceptor.equals("3")){//nuestro grupo es el 3
                                 //si es para mi enviar el update con la respuesta
                                 Singleton.getInstancia().setMensaje("El grupo " + grupoEmisor + " te ha enviado un mensaje." );
                                 not = new Notificacion();
@@ -75,8 +75,7 @@ public class Listener extends Thread {
                                 }                                        
                             }
                         }else{
-                            //UPDATE
-                            
+                            //UPDATE                            
                             //comprobar si yo fui el que envie la solicitud
                             //Descomponer id, grupo emisor y grupo receptor en esta parte
                             id = parameter.split("\\{")[2].replace("}","").split(",")[0].split(":")[1];
