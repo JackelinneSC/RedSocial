@@ -18,7 +18,7 @@ public class ProyectoArchivos {
     public static void main(String[] args) throws ClassNotFoundException, SQLException{
         // TODO code application logic here
         //conexión a la base de datos
-        Singleton.getInstancia().conexion();
+        //Singleton.getInstancia().conexion();
     }
     
 }
