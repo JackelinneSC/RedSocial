@@ -170,7 +170,7 @@ public class Backup extends javax.swing.JFrame {
             filePath = newFile.getPath();
             TF_backupPath.setText(filePath + "\\MEIA_Backup\\");
 
-            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void TF_backupPathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_backupPathActionPerformed

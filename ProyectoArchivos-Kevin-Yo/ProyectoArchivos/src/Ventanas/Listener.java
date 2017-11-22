@@ -27,6 +27,7 @@ public class Listener extends Thread {
     private String grupoReceptor;
     private String grupoEmisor;
     private Notificacion not;  
+    private Secuencial objSecuencial = new Secuencial();
 
     Listener(Connection conn) throws SQLException {
             this.conn = conn;
@@ -67,7 +68,10 @@ public class Listener extends Thread {
                                 not.setVisible(true);
                              
                                 //si es para mi enviar el update con la respuesta de que el usuario existe
-                                
+                                if(objSecuencial.busqueda(false, id, objSecuencial.RutaBU, objSecuencial.RutaU) == "|0")
+                                    existe = false; //si no existe
+                                else
+                                    existe = true; //si existe y la cadena es distinta a |0
                                 if(existe){
                                     Singleton.getInstancia().Update(id, existe);
                                 }else{
@@ -82,7 +86,7 @@ public class Listener extends Thread {
                             grupoEmisor = parameter.split("\\{")[2].replace("}","").split(",")[1].split(":")[1];
                             grupoReceptor = parameter.split("\\{")[2].replace("}","").split(",")[2].split(":")[1];
                             
-                            if(grupoEmisor.equals("1")){
+                            if(grupoEmisor.equals("3")){
                                  String respuesta = parameter.split("\\{")[2].replace("}","").split(",")[7].split(":")[1];
                                  //Comprobar cual fue la respuesta
                                  if(respuesta.equals("false")){
