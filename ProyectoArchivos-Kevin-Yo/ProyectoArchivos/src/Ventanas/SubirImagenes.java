@@ -116,21 +116,21 @@ public class SubirImagenes extends javax.swing.JFrame {
 		
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    public void pruebaImagen()
-	{
-                ImageIcon imagen = new ImageIcon(fotografia);
-                JL_foto.setIcon(imagen);
-                //modificamos la imagen
-                ImageIcon icon = new ImageIcon(fotografia);
-                Image img = icon.getImage();
-                //cambiamos el tamaño de la imagen
-                Image newimg = img.getScaledInstance(342,164, java.awt.Image.SCALE_SMOOTH);
-                ImageIcon newIcon = new ImageIcon(newimg);
-                JL_foto.setIcon(newIcon);
-                JL_foto.setSize(342,164);
-                
+    public void pruebaImagen()	{
+        ImageIcon imagen = new ImageIcon(fotografia);
+        JL_foto.setIcon(imagen);
+        //modificamos la imagen
+        ImageIcon icon = new ImageIcon(fotografia);
+        Image img = icon.getImage();
+        //cambiamos el tamaño de la imagen
+        Image newimg = img.getScaledInstance(342,164, java.awt.Image.SCALE_SMOOTH);
+        ImageIcon newIcon = new ImageIcon(newimg);
+        JL_foto.setIcon(newIcon);
+        JL_foto.setSize(342,164);
+               
  
-	}
+    }
+
     /**
      * @param args the command line arguments
      */

@@ -7,6 +7,7 @@ package Ventanas;
 
 
 
+import java.awt.Image;
 import static java.awt.image.ImageObserver.WIDTH;
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
 import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 
@@ -186,11 +188,11 @@ public class Administracion extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         List_amigosI = new javax.swing.JList<>();
         jLabel13 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        CB_imagenes = new javax.swing.JComboBox<>();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel14 = new javax.swing.JLabel();
+        L_foto = new javax.swing.JLabel();
         BtnDarBAja = new javax.swing.JButton();
         BrnCerrar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
@@ -531,7 +533,7 @@ public class Administracion extends javax.swing.JFrame {
         );
         jInternalFrame1Layout.setVerticalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1620, Short.MAX_VALUE)
+            .addGap(0, 1644, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout PBusquedaLayout = new javax.swing.GroupLayout(PBusqueda);
@@ -587,7 +589,7 @@ public class Administracion extends javax.swing.JFrame {
         );
         FrameSolicitudesLayout.setVerticalGroup(
             FrameSolicitudesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1662, Short.MAX_VALUE)
+            .addGap(0, 1686, Short.MAX_VALUE)
         );
 
         BtnSolicitud.setText("Solicitudes");
@@ -811,20 +813,14 @@ public class Administracion extends javax.swing.JFrame {
 
         jLabel12.setText("Mis amigos");
 
+        List_amigosI.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                List_amigosIMouseClicked(evt);
+            }
+        });
         jScrollPane4.setViewportView(List_amigosI);
 
         jLabel13.setText("Fotos");
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 278, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 231, Short.MAX_VALUE)
-        );
 
         jButton4.setText("Subir una imagen");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -833,6 +829,14 @@ public class Administracion extends javax.swing.JFrame {
             }
         });
 
+        CB_imagenes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CB_imagenesMouseClicked(evt);
+            }
+        });
+
+        L_foto.setText("d");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -840,19 +844,18 @@ public class Administracion extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(101, 101, 101)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                         .addComponent(jLabel13)
                         .addGap(18, 18, 18)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(338, 338, 338))))
+                        .addComponent(CB_imagenes, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(209, 209, 209))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(79, 79, 79)
+                        .addComponent(L_foto, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
@@ -861,7 +864,7 @@ public class Administracion extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 611, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(184, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel14)
@@ -874,18 +877,21 @@ public class Administracion extends javax.swing.JFrame {
                 .addComponent(jLabel14)
                 .addGap(4, 4, 4)
                 .addComponent(jButton4)
-                .addGap(24, 24, 24)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel12)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(1342, Short.MAX_VALUE))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(19, 19, 19)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel12)
+                            .addComponent(CB_imagenes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(114, 114, 114)
+                        .addComponent(L_foto)))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
 
         TabOpciones.addTab("Imágenes", jPanel5);
@@ -1009,6 +1015,7 @@ public class Administracion extends javax.swing.JFrame {
 
     }//GEN-LAST:event_BtnBuscarActionPerformed
 
+    
     private void btnImagenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImagenActionPerformed
 
         //Seleccionar una foto de perfil.
@@ -1314,7 +1321,6 @@ public class Administracion extends javax.swing.JFrame {
         // TODO add your handling code here:
         DefaultListModel modeloAmigos = new DefaultListModel();
         jLabel14.setText(cliente.getUser());
-        
         String resultado = objSecuencial.busqueda(false, cliente.getUser(), objSecuencial.RutaBU, objSecuencial.RutaU);
         
         if (resultado !="|0") {
@@ -1331,6 +1337,40 @@ public class Administracion extends javax.swing.JFrame {
         List_amigosI.setModel(modeloAmigos);
         
     }//GEN-LAST:event_TabOpcionesMouseClicked
+
+    private void BuscarImagen(String unUsuario){
+        
+    }
+    private void List_amigosIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_amigosIMouseClicked
+        // TODO add your handling code here:
+        
+        String seleccionado = List_amigosI.getSelectedValue().toString();
+        BuscarImagen(seleccionado); //este metodo es del arbol binario y debe regresar  todas las fotos de un usuario, le mando el nombre del usuario
+        String [] prueba = {"ja", "je"};
+        for (int i = 0; i < prueba.length; i++) {
+            CB_imagenes.addItem(prueba[i]);
+        }
+    }//GEN-LAST:event_List_amigosIMouseClicked
+
+    public void pruebaImagen(String fotografia)	{
+        ImageIcon imagen = new ImageIcon(fotografia);
+        L_foto.setIcon(imagen);
+        //modificamos la imagen
+        ImageIcon icon = new ImageIcon(fotografia);
+        Image img = icon.getImage();
+        //cambiamos el tamaño de la imagen
+        Image newimg = img.getScaledInstance(342,164, java.awt.Image.SCALE_SMOOTH);
+        ImageIcon newIcon = new ImageIcon(newimg);
+        L_foto.setIcon(newIcon);
+        L_foto.setSize(342,164);
+               
+ 
+    }
+    private void CB_imagenesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CB_imagenesMouseClicked
+        // TODO add your handling code here:
+        
+        String fotoRuta = CB_imagenes.getSelectedItem().toString();
+    }//GEN-LAST:event_CB_imagenesMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1382,10 +1422,12 @@ public class Administracion extends javax.swing.JFrame {
     private javax.swing.JButton BtnGuardarAd;
     private javax.swing.JButton BtnSolicitud;
     private javax.swing.JButton BtnVerAmigos;
+    private javax.swing.JComboBox<String> CB_imagenes;
     private javax.swing.JDesktopPane Escritorio;
     private javax.swing.JInternalFrame FrameSolicitudes;
     private javax.swing.JLabel LBusqueNoAd;
     private javax.swing.JLabel LModificarDatos;
+    private javax.swing.JLabel L_foto;
     private javax.swing.JLabel LfotoPerfil;
     private javax.swing.JList<String> List_amigosI;
     private javax.swing.JPanel PBusqueda;
@@ -1415,7 +1457,6 @@ public class Administracion extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1436,7 +1477,6 @@ public class Administracion extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
