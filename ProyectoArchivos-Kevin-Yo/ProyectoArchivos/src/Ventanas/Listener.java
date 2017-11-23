@@ -26,8 +26,12 @@ public class Listener extends Thread {
     private String id;
     private String grupoReceptor;
     private String grupoEmisor;
+    private String user;
+    private String mensaje;
+    private String fecha;
     private Notificacion not;  
     private Secuencial objSecuencial = new Secuencial();
+    private Mensaje objMensaje = new Mensaje();
 
     Listener(Connection conn) throws SQLException {
             this.conn = conn;
@@ -58,22 +62,35 @@ public class Listener extends Thread {
                             
                             id = parameter.split("\\{")[2].replace("}","").split(",")[0].split(":")[1];
                             grupoReceptor = parameter.split("\\{")[2].replace("}","").split(",")[2].split(":")[1];
-                            grupoEmisor = parameter.split("\\{")[2].replace("}","").split(",")[1].split(":")[1];                           
+                            grupoEmisor = parameter.split("\\{")[2].replace("}","").split(",")[1].split(":")[1]; //emisor
+                            user = parameter.split("\\{")[2].replace("}","").split(",")[4].split(":")[1]; //receptor
+                            user = user.substring(1, user.length()-1);
+                            mensaje = parameter.split("\\{")[2].replace("}","").split(",")[6].split(":")[1]; //mensaje
+                            mensaje = mensaje.substring(1, mensaje.length()-1);
+                            fecha = parameter.split("\\{")[2].replace("}","").split(",")[5].split(":")[1]; //fecha
+                            fecha = fecha.substring(1, fecha.length()-1);
                             boolean existe = false;
-                            
+                            objMensaje.setEmisor(grupoEmisor);
+                            objMensaje.setFecha(fecha);
+                            objMensaje.setReceptor(user);
+                            objMensaje.setMensaje(mensaje);
+                            objMensaje.setStatus(1); //mensajes privados
+                         
                             if(grupoReceptor.equals("3")){//nuestro grupo es el 3
                                 //si es para mi enviar el update con la respuesta
-                                Singleton.getInstancia().setMensaje("El grupo " + grupoEmisor + " te ha enviado un mensaje." );
+                                Singleton.getInstancia().setMensaje("El grupo " + grupoEmisor + " le ha enviado un mensaje a " + user);
                                 not = new Notificacion();
                                 not.setVisible(true);
                              
                                 //si es para mi enviar el update con la respuesta de que el usuario existe
-                                if(objSecuencial.busqueda(false, id, objSecuencial.RutaBU, objSecuencial.RutaU) == "|0")
+                                if(objSecuencial.busqueda(false, user, objSecuencial.RutaBU, objSecuencial.RutaU) == "|0")
                                     existe = false; //si no existe
                                 else
                                     existe = true; //si existe y la cadena es distinta a |0
                                 if(existe){
                                     Singleton.getInstancia().Update(id, existe);
+                                    //guardar el mensaje en nuestro programa
+                                    objSecuencial.Insertar(objSecuencial.RutaBM,new User() , new Solicitud(), new Grupo(), objMensaje);
                                 }else{
                                     Singleton.getInstancia().Update(id, existe);
                                 }                                        

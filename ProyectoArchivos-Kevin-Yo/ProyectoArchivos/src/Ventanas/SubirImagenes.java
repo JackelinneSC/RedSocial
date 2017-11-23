@@ -22,6 +22,10 @@ public class SubirImagenes extends javax.swing.JFrame {
     JLabel etiqueta;
     FileMethods archivos = new FileMethods();
     String fotografia;
+    String usuario;
+    String [] rutaFotografias;
+    int count = 1;
+    boolean presionado = false;
     
     /**
      * Creates new form SubirImagenes
@@ -30,7 +34,9 @@ public class SubirImagenes extends javax.swing.JFrame {
         initComponents();
     }
 
-    
+    public void Usuario(String usuario){
+        this.usuario = usuario;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -45,8 +51,14 @@ public class SubirImagenes extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         JL_foto = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+        });
 
         jToggleButton1.setText("Buscar imagen");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -64,6 +76,13 @@ public class SubirImagenes extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setText(">>");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -77,8 +96,14 @@ public class SubirImagenes extends javax.swing.JFrame {
                         .addComponent(JL_foto)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(TF_filepath, javax.swing.GroupLayout.DEFAULT_SIZE, 374, Short.MAX_VALUE)
-                        .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TF_filepath, javax.swing.GroupLayout.DEFAULT_SIZE, 374, Short.MAX_VALUE)
+                                .addGap(28, 28, 28))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(jButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton1)
                             .addComponent(jToggleButton1))
@@ -96,7 +121,9 @@ public class SubirImagenes extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton3))
                 .addGap(44, 44, 44))
         );
 
@@ -105,9 +132,11 @@ public class SubirImagenes extends javax.swing.JFrame {
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         // TODO add your handling code here:
+        presionado = true;   
         fotografia = archivos.fotoPerfil(this);
         TF_filepath.setText(fotografia);
-        pruebaImagen(); 
+       
+        
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -116,11 +145,36 @@ public class SubirImagenes extends javax.swing.JFrame {
 		
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    public void pruebaImagen()	{
-        ImageIcon imagen = new ImageIcon(fotografia);
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        // TODO add your handling code here:
+        //Agregar el método buscar del árbol para obtener todas las imágenes del usuario, le mandamos de parámetro el "usuario" y se asigna a ruta foto
+        String []prueba = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; 
+        rutaFotografias = prueba;
+        pruebaImagen(prueba[0]); 
+        if (presionado) {
+             pruebaImagen(fotografia);
+        }
+        
+    }//GEN-LAST:event_formWindowActivated
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        if (count < rutaFotografias.length) {
+            pruebaImagen(rutaFotografias[count]);
+            count++;
+        }
+        else{
+            count =0;
+            pruebaImagen(rutaFotografias[count]);
+            count++;
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    public void pruebaImagen(String fotografias)	{
+        ImageIcon imagen = new ImageIcon(fotografias);
         JL_foto.setIcon(imagen);
         //modificamos la imagen
-        ImageIcon icon = new ImageIcon(fotografia);
+        ImageIcon icon = new ImageIcon(fotografias);
         Image img = icon.getImage();
         //cambiamos el tamaño de la imagen
         Image newimg = img.getScaledInstance(342,164, java.awt.Image.SCALE_SMOOTH);
@@ -169,6 +223,7 @@ public class SubirImagenes extends javax.swing.JFrame {
     private javax.swing.JLabel JL_foto;
     private javax.swing.JTextField TF_filepath;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
