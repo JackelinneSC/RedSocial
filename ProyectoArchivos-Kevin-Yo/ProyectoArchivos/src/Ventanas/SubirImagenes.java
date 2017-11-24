@@ -52,6 +52,7 @@ public class SubirImagenes extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         JL_foto = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -83,6 +84,13 @@ public class SubirImagenes extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setText("Cerrar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -104,9 +112,10 @@ public class SubirImagenes extends javax.swing.JFrame {
                                 .addGap(11, 11, 11)
                                 .addComponent(jButton3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jToggleButton1))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jToggleButton1)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(50, 50, 50))))
         );
         layout.setVerticalGroup(
@@ -124,7 +133,9 @@ public class SubirImagenes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton3))
-                .addGap(44, 44, 44))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton2)
+                .addGap(10, 10, 10))
         );
 
         pack();
@@ -169,6 +180,11 @@ public class SubirImagenes extends javax.swing.JFrame {
             count++;
         }
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public void pruebaImagen(String fotografias)	{
         ImageIcon imagen = new ImageIcon(fotografias);
@@ -223,6 +239,7 @@ public class SubirImagenes extends javax.swing.JFrame {
     private javax.swing.JLabel JL_foto;
     private javax.swing.JTextField TF_filepath;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JToggleButton jToggleButton1;

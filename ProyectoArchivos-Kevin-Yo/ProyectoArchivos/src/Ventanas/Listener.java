@@ -61,14 +61,14 @@ public class Listener extends Thread {
                             //comprobar si es para mi
                             
                             id = parameter.split("\\{")[2].replace("}","").split(",")[0].split(":")[1];
-                            grupoReceptor = parameter.split("\\{")[2].replace("}","").split(",")[2].split(":")[1];
-                            grupoEmisor = parameter.split("\\{")[2].replace("}","").split(",")[1].split(":")[1]; //emisor
-                            user = parameter.split("\\{")[2].replace("}","").split(",")[4].split(":")[1]; //receptor
-                            user = user.substring(1, user.length()-1);
-                            mensaje = parameter.split("\\{")[2].replace("}","").split(",")[6].split(":")[1]; //mensaje
-                            mensaje = mensaje.substring(1, mensaje.length()-1);
-                            fecha = parameter.split("\\{")[2].replace("}","").split(",")[5].split(":")[1]; //fecha
-                            fecha = fecha.substring(1, fecha.length()-1);
+                            grupoReceptor = parameter.split("\\{")[2].replace("}","").split(",")[2].split(":")[1].replace("\"","");
+                            grupoEmisor = parameter.split("\\{")[2].replace("}","").split(",")[1].split(":")[1].replace("\"",""); //emisor
+                            user = parameter.split("\\{")[2].replace("}","").split(",")[4].split(":")[1].replace("\"",""); //receptor
+                          
+                            mensaje = parameter.split("\\{")[2].replace("}","").split(",")[6].split(":")[1].replace("\"",""); //mensaje
+                           
+                            fecha = parameter.split("\\{")[2].replace("}","").split(",")[5].split(":")[1].replace("\"",""); //fecha
+                         
                             boolean existe = false;
                             objMensaje.setEmisor(grupoEmisor);
                             objMensaje.setFecha(fecha);

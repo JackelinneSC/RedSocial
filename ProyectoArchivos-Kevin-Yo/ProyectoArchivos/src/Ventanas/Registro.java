@@ -217,13 +217,14 @@ public class Registro extends javax.swing.JFrame {
         //Seleccionar una foto de perfil.
        
         fotografía = archivos.fotoPerfil(this);
+      
         if (archivos.CopiarUnArchivo(fotografía + "\\", "C:\\MEIA\\Fotografías\\")) {
             File archivoOriginal = new File(fotografía); 
             fotografía = "C:\\MEIA\\Fotografías\\" + archivoOriginal.getName();
             Foto = true;
         }
                  
-             
+            
     }//GEN-LAST:event_btnImagenActionPerformed
 
     //BOTÓN REGISTRO
