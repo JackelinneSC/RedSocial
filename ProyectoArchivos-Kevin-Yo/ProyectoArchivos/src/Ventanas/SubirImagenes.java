@@ -7,6 +7,10 @@ package Ventanas;
 
 import java.awt.Image;
 import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
@@ -154,6 +158,13 @@ public class SubirImagenes extends javax.swing.JFrame {
         // TODO add your handling code here:
         //Obtener la ruta de la imagen 
         String rutaDeImagen = TF_filepath.getText();
+        ArbolBB arbol=new ArbolBB();
+        try {
+            arbol.insertar(TF_filepath, arbol.raiz,usuario);
+        } catch (IOException ex) {
+            Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
             
 		
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -163,7 +174,15 @@ public class SubirImagenes extends javax.swing.JFrame {
         //Agregar el método buscar del árbol para obtener todas las imágenes del usuario, le mandamos de parámetro el "usuario" y se asigna a ruta foto
         //ese arreglo prueba en realidad es el arreglo que me retornas con todas las rutas
         //podes poner prueba = MetodoBuscar(usuario); ese usuario es el nombre del usuario
-        String []prueba = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; 
+        //String []prueba = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; 
+        
+                ArbolBB arbol=new ArbolBB();
+            String [] prueba = null;
+            try {
+                prueba=arbol.busquedaInterna(usuario).split(Pattern.quote("|"));
+            } catch (IOException ex) {
+                Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
+            }
         rutaFotografias = prueba;
         pruebaImagen(prueba[0]); 
         if (presionado) {

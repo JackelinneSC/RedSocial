@@ -1437,8 +1437,16 @@ public class Administracion extends javax.swing.JFrame {
         if (seleccionado != "No tienes amigos en tu lista de amigos") {
             //ArregloDeImagenes = BuscarImagen(seleccionado); //este metodo es del arbol binario y debe regresar  todas las fotos de un usuario, le mando el nombre del usuario
             count = 1;
+            
+                ArbolBB arbol=new ArbolBB();
+            String [] prueba = null;
+            try {
+                prueba=arbol.busquedaInterna(cliente.getUser()).split(Pattern.quote("|"));
+            } catch (IOException ex) {
+                Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
+            }
             //esta es la linea que modificas, lo demás queda igual
-            String [] prueba = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; //arreglo de las imágenes
+            // = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; //arreglo de las imágenes
             ArregloDeImagenes = prueba;
             pruebaImagen(ArregloDeImagenes[0],506,259);
         }
