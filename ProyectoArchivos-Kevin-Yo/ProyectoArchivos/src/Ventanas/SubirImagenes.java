@@ -149,16 +149,20 @@ public class SubirImagenes extends javax.swing.JFrame {
        
         
     }//GEN-LAST:event_jToggleButton1ActionPerformed
-
+//ACA AGREGAS EL METODOD GUARDAR IMAGEN 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        //Obtener la ruta de la imagen 
+        String rutaDeImagen = TF_filepath.getText();
             
 		
     }//GEN-LAST:event_jButton1ActionPerformed
-
+//KEVIN ACA AGREGAS EL METODO BUSCAR DEL ARBOL QUE RETORNA TODAS LAS RUTAS
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
         //Agregar el método buscar del árbol para obtener todas las imágenes del usuario, le mandamos de parámetro el "usuario" y se asigna a ruta foto
+        //ese arreglo prueba en realidad es el arreglo que me retornas con todas las rutas
+        //podes poner prueba = MetodoBuscar(usuario); ese usuario es el nombre del usuario
         String []prueba = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; 
         rutaFotografias = prueba;
         pruebaImagen(prueba[0]); 

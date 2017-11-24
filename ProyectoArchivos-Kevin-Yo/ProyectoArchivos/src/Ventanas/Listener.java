@@ -70,7 +70,7 @@ public class Listener extends Thread {
                             fecha = parameter.split("\\{")[2].replace("}","").split(",")[5].split(":")[1].replace("\"",""); //fecha
                          
                             boolean existe = false;
-                            objMensaje.setEmisor(emisor); 
+                            objMensaje.setEmisor(emisor + "(grupo" + grupoEmisor + ")"); 
                             objMensaje.setFecha(fecha);
                             objMensaje.setReceptor(user);
                             objMensaje.setMensaje(mensaje);

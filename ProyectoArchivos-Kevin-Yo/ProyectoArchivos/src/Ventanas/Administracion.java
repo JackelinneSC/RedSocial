@@ -1429,18 +1429,20 @@ public class Administracion extends javax.swing.JFrame {
     private void BuscarImagen(String unUsuario){
         
     }
+    //KEVIN ACA AGREGAS EL METODO BUSCAR DEL ARBOL PARA QUE TE RETORNE TODAS LAS RUTAS
     private void List_amigosIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_amigosIMouseClicked
         // TODO add your handling code here:
         
         String seleccionado = List_amigosI.getSelectedValue().toString();
-        if (seleccionado == "No tienes amigos en tu lista de amigos") {
+        if (seleccionado != "No tienes amigos en tu lista de amigos") {
             //ArregloDeImagenes = BuscarImagen(seleccionado); //este metodo es del arbol binario y debe regresar  todas las fotos de un usuario, le mando el nombre del usuario
             count = 1;
+            //esta es la linea que modificas, lo demás queda igual
             String [] prueba = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; //arreglo de las imágenes
             ArregloDeImagenes = prueba;
             pruebaImagen(ArregloDeImagenes[0],506,259);
         }
-        
+                
         
     }//GEN-LAST:event_List_amigosIMouseClicked
 
