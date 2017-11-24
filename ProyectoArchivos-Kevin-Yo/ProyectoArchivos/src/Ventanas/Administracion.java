@@ -1321,10 +1321,25 @@ public class Administracion extends javax.swing.JFrame {
                     }
                 }
             }
+            //Mensaje de grupos
+            tfPrivado.append("\r\n" + "------Mensaje de grupos------"+ "\r\n" );
+            String todosLosMensajes = objSecuencial.busqueda(true, cliente.getUser(), RutaBM, RutaM); //del usuario loggeado
+            String [] prueba  = todosLosMensajes.split(Pattern.quote("|"));
+            /*for (int i = 0; i < todosLosMensajes.length; i++) {
+                String[] mensaje = todosLosMensajes[i].split(Pattern.quote(","));
+                if (mensaje[0].equals("|0")) { //quiere decir que es un mensaje de un grupo
+                    tfPrivado.append(mensaje[0]+" para "+mensaje[1]+" :"+mensaje[2]+"\r\n");
+                }
+            }*/
         } 
         else{
             //Grupos
             //objSecuencial.busqueda(true, Amigos[i], RutaBM, RutaM);
+            //busqueda acumulutaviva con user conectado, quien lo envio y biusqueda directa del emisor devolver diferente 0, si no existe en el meia es del otro grupo
+            //mensaje,jkhkj,jjhkk| 
+            
+            
+            
         }
     }//GEN-LAST:event_btnMActualizarActionPerformed
 
