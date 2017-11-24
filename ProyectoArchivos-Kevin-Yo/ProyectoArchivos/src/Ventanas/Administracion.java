@@ -1325,22 +1325,29 @@ public class Administracion extends javax.swing.JFrame {
             tfPrivado.append("\r\n" + "------Mensaje de grupos------"+ "\r\n" );
             String todosLosMensajes = objSecuencial.busqueda(true, cliente.getUser(), RutaBM, RutaM); //del usuario loggeado
             String [] prueba  = todosLosMensajes.split(Pattern.quote("|"));
-            /*for (int i = 0; i < todosLosMensajes.length; i++) {
-                String[] mensaje = todosLosMensajes[i].split(Pattern.quote(","));
-                if (mensaje[0].equals("|0")) { //quiere decir que es un mensaje de un grupo
-                    tfPrivado.append(mensaje[0]+" para "+mensaje[1]+" :"+mensaje[2]+"\r\n");
-                }
+            for (int i = 0; i < prueba.length; i++) {
+                String[] partesDelMensaje = prueba[i].split(Pattern.quote(","));
+                //buscar como emisor
+               // tfPrivado.append("Mensajes enviados:"+ "\r\n" );
+                String buscar = objSecuencial.busqueda(false, prueba[i].split(Pattern.quote(","))[0], objSecuencial.RutaBA, objSecuencial.RutaA);
+                if (buscar.equals("|0")) {
+                    tfPrivado.append("("+partesDelMensaje[2] + ")" +partesDelMensaje[0]+" para "+partesDelMensaje[1]+" :"+partesDelMensaje[4]+"\r\n");
+                }             
+                
+            }
+            /*for (int i = 0; i < prueba.length; i++) {
+                String[] partesDelMensaje = prueba[i].split(Pattern.quote(","));
+                //buscar como receptor
+                tfPrivado.append("Mensajes recibidos:"+ "\r\n" );
+                String buscar = objSecuencial.busqueda(false, prueba[i].split(Pattern.quote(","))[1], objSecuencial.RutaBA, objSecuencial.RutaA);
+                if (buscar.equals("|0")) {
+                    tfPrivado.append("("+partesDelMensaje[2] + ")" +partesDelMensaje[0]+" para "+partesDelMensaje[1]+" :"+partesDelMensaje[4]+"\r\n");
+                }             
+                
             }*/
+           
         } 
-        else{
-            //Grupos
-            //objSecuencial.busqueda(true, Amigos[i], RutaBM, RutaM);
-            //busqueda acumulutaviva con user conectado, quien lo envio y biusqueda directa del emisor devolver diferente 0, si no existe en el meia es del otro grupo
-            //mensaje,jkhkj,jjhkk| 
-            
-            
-            
-        }
+        
     }//GEN-LAST:event_btnMActualizarActionPerformed
 
     private void btnMEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMEliminarActionPerformed
