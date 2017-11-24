@@ -1322,6 +1322,10 @@ public class Administracion extends javax.swing.JFrame {
                 }
             }
         } 
+        else{
+            //Grupos
+            //objSecuencial.busqueda(true, Amigos[i], RutaBM, RutaM);
+        }
     }//GEN-LAST:event_btnMActualizarActionPerformed
 
     private void btnMEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMEliminarActionPerformed

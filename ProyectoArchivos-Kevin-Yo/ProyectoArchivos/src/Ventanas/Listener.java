@@ -28,6 +28,7 @@ public class Listener extends Thread {
     private String grupoEmisor;
     private String user;
     private String mensaje;
+    private String emisor;
     private String fecha;
     private Notificacion not;  
     private Secuencial objSecuencial = new Secuencial();
@@ -64,13 +65,13 @@ public class Listener extends Thread {
                             grupoReceptor = parameter.split("\\{")[2].replace("}","").split(",")[2].split(":")[1].replace("\"","");
                             grupoEmisor = parameter.split("\\{")[2].replace("}","").split(",")[1].split(":")[1].replace("\"",""); //emisor
                             user = parameter.split("\\{")[2].replace("}","").split(",")[4].split(":")[1].replace("\"",""); //receptor
-                          
+                            emisor = parameter.split("\\{")[2].replace("}","").split(",")[3].split(":")[1].replace("\"","");
                             mensaje = parameter.split("\\{")[2].replace("}","").split(",")[6].split(":")[1].replace("\"",""); //mensaje
                            
                             fecha = parameter.split("\\{")[2].replace("}","").split(",")[5].split(":")[1].replace("\"",""); //fecha
                          
                             boolean existe = false;
-                            objMensaje.setEmisor(grupoEmisor);
+                            objMensaje.setEmisor(emisor);
                             objMensaje.setFecha(fecha);
                             objMensaje.setReceptor(user);
                             objMensaje.setMensaje(mensaje);
