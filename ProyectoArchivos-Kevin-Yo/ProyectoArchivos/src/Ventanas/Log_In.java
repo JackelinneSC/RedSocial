@@ -197,7 +197,7 @@ public class Log_In extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        //Singleton.getInstancia().conexion();
+        Singleton.getInstancia().conexion();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
