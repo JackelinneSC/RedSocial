@@ -108,7 +108,7 @@ public class Listener extends Thread {
                             fecha = parameter.split("\\{")[2].replace("}","").split(",")[5].split(":")[1].replace("\"",""); //fecha
                             objMensaje.setEmisor(emisor); 
                             objMensaje.setFecha(fecha);
-                            objMensaje.setReceptor(user);
+                            objMensaje.setReceptor(user + "(grupo" + grupoReceptor + ")");
                             objMensaje.setMensaje(mensaje);
                             objMensaje.setStatus(1); //mensajes privados
                             if(grupoEmisor.equals("3")){
