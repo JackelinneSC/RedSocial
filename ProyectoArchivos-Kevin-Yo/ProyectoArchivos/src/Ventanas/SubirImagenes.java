@@ -25,8 +25,9 @@ public class SubirImagenes extends javax.swing.JFrame {
     
     JLabel etiqueta;
     FileMethods archivos = new FileMethods();
+    User usuario = new User();
     String fotografia;
-    String usuario;
+ 
     String [] rutaFotografias;
     int count = 1;
     boolean presionado = false;
@@ -38,8 +39,8 @@ public class SubirImagenes extends javax.swing.JFrame {
         initComponents();
     }
 
-    public void Usuario(String usuario){
-        this.usuario = usuario;
+    public void Usuario(User user){
+        usuario = user;
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -149,18 +150,25 @@ public class SubirImagenes extends javax.swing.JFrame {
         // TODO add your handling code here:
         presionado = true;   
         fotografia = archivos.fotoPerfil(this);
-        TF_filepath.setText(fotografia);
        
+        TF_filepath.setText(fotografia);
+        pruebaImagen(fotografia);
         
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 //ACA AGREGAS EL METODOD GUARDAR IMAGEN 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         //Obtener la ruta de la imagen 
+        if (archivos.CopiarUnArchivo(fotografia + "\\", "C:\\MEIA\\Fotografías\\")) {
+            File archivoOriginal = new File(fotografia); 
+            fotografia = "C:\\MEIA\\Fotografías\\" + archivoOriginal.getName() ;
+           
+        }
+        TF_filepath.setText(fotografia);
         String rutaDeImagen = TF_filepath.getText();
         ArbolBB arbol=new ArbolBB();
         try {
-            arbol.insertar(TF_filepath, arbol.raiz,usuario);
+            arbol.insertar(rutaDeImagen, arbol.raiz,usuario.getUser());
         } catch (IOException ex) {
             Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -179,7 +187,7 @@ public class SubirImagenes extends javax.swing.JFrame {
                 ArbolBB arbol=new ArbolBB();
             String [] prueba = null;
             try {
-                prueba=arbol.busquedaInterna(usuario).split(Pattern.quote("|"));
+                prueba=arbol.busquedaInterna(usuario.getUser()).split(Pattern.quote("|"));
             } catch (IOException ex) {
                 Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
             }

@@ -1396,6 +1396,7 @@ public class Administracion extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         SubirImagenes jfrom = new SubirImagenes();
+        jfrom.Usuario(cliente);
         jfrom.setVisible(true);
         
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -1417,11 +1418,11 @@ public class Administracion extends javax.swing.JFrame {
                 
                 modeloAmigos.addElement("No tienes amigos en tu lista de amigos");
                 L_exito.setText("No hay imágenes que mostrar");
-                pruebaImagen("C:\\Users\\jsala\\Documents\\RedSocial\\ProyectoArchivos-Kevin-Yo\\ProyectoArchivos\\build\\classes\\galeria.png",506,259);
+               
             }    
                             
         }
-               
+        pruebaImagen("C:\\Users\\jsala\\Documents\\RedSocial\\ProyectoArchivos-Kevin-Yo\\ProyectoArchivos\\build\\classes\\galeria.png",506,259);
         List_amigosI.setModel(modeloAmigos);
         
     }//GEN-LAST:event_TabOpcionesMouseClicked
@@ -1441,7 +1442,7 @@ public class Administracion extends javax.swing.JFrame {
                 ArbolBB arbol=new ArbolBB();
             String [] prueba = null;
             try {
-                prueba=arbol.busquedaInterna(cliente.getUser()).split(Pattern.quote("|"));
+                prueba=arbol.busquedaInterna(seleccionado).split(Pattern.quote("|"));
             } catch (IOException ex) {
                 Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -1456,15 +1457,22 @@ public class Administracion extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        if (count < ArregloDeImagenes.length) {
-            pruebaImagen(ArregloDeImagenes[count],506,259);
-            count++;
+        if(ArregloDeImagenes.length==0){
+            
         }
         else{
-            count = 0;
+            if (count < ArregloDeImagenes.length) {
             pruebaImagen(ArregloDeImagenes[count],506,259);
             count++;
+            }
+            else{
+                count = 0;
+                pruebaImagen(ArregloDeImagenes[count],506,259);
+                count++;
+            }
         }
+            
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
