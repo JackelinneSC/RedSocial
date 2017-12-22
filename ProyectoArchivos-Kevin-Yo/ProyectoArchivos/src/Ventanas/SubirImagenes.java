@@ -159,10 +159,10 @@ public class SubirImagenes extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         //Obtener la ruta de la imagen 
-        if (archivos.CopiarUnArchivo(fotografia + "\\", "C:\\MEIA\\Fotografías\\")) {
+        if (archivos.CopiarUnArchivoImagen(fotografia + "\\", "C:\\MEIA\\pictures\\",usuario.getUser())) {
             File archivoOriginal = new File(fotografia); 
-            fotografia = "C:\\MEIA\\Fotografías\\" + archivoOriginal.getName() ;
-           
+            fotografia = "C:\\MEIA\\pictures\\"+usuario.getUser() + archivoOriginal.getName();
+          
         }
         TF_filepath.setText(fotografia);
         String rutaDeImagen = TF_filepath.getText();
@@ -183,33 +183,46 @@ public class SubirImagenes extends javax.swing.JFrame {
         //ese arreglo prueba en realidad es el arreglo que me retornas con todas las rutas
         //podes poner prueba = MetodoBuscar(usuario); ese usuario es el nombre del usuario
         //String []prueba = {"C:\\Users\\jsala\\Pictures\\WhatsApp Image 2016-10-24 at 11.53.18 PM.jpeg", "C:\\Users\\jsala\\Pictures\\Saved Pictures\\WhatsApp Image 2016-11-19 at 1.59.38 PM.jpeg"}; 
-        
-                ArbolBB arbol=new ArbolBB();
-            String [] prueba = null;
-            try {
-                prueba=arbol.busquedaInterna(usuario.getUser()).split(Pattern.quote("|"));
-            } catch (IOException ex) {
-                Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        rutaFotografias = prueba;
-        pruebaImagen(prueba[0]); 
-        if (presionado) {
-             pruebaImagen(fotografia);
+        ArbolBB arbol = new ArbolBB();
+        String [] prueba = null;
+        try {
+            prueba=arbol.busquedaInterna(usuario.getUser()).split(Pattern.quote("|"));
+        } catch (IOException ex) {
+            Logger.getLogger(Administracion.class.getName()).log(Level.SEVERE, null, ex);
         }
+        rutaFotografias = prueba;
+        if (rutaFotografias.length ==0) {
+            pruebaImagen("C:\\Users\\jsala\\Documents\\RedSocial\\ProyectoArchivos-Kevin-Yo\\ProyectoArchivos\\build\\classes\\galeria.png");
+            
+        }else{
+            pruebaImagen(prueba[0]); 
+            if (presionado) {
+                 pruebaImagen(fotografia);
+            }
+        }
+        
+        
         
     }//GEN-LAST:event_formWindowActivated
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        if (count < rutaFotografias.length) {
-            pruebaImagen(rutaFotografias[count]);
-            count++;
+        if (rutaFotografias.length ==1) {
+            pruebaImagen("C:\\Users\\jsala\\Documents\\RedSocial\\ProyectoArchivos-Kevin-Yo\\ProyectoArchivos\\build\\classes\\galeria.png");
+        }else{
+            if (count < rutaFotografias.length) {
+                pruebaImagen(rutaFotografias[count]);
+                count++;
+            }
+            else{
+                count =0;
+                pruebaImagen(rutaFotografias[count]);
+                count++;
+            }
         }
-        else{
-            count =0;
-            pruebaImagen(rutaFotografias[count]);
-            count++;
-        }
+        
+       
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

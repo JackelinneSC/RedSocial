@@ -70,7 +70,7 @@ public class NodoArbol {
         RandomAccessFile raf;
         try {
             raf = new RandomAccessFile(archivo,"rw");
-            raf.seek(registro*158);
+            raf.seek(registro*156);
             linea=raf.readLine();
             raf.close();
             
@@ -99,7 +99,7 @@ public class NodoArbol {
                 Date fecha = new Date();
                 if(direccion.equals(RutaDesArbol))
                 {
-                    escritor.write("Archivo:"+RutaArbol+"\r\nDescripción: Imagenes_usuario\r\nTipo: archivo_de_datos\r\nOrganización: Arbol Binario\r\nAutor: "+cadena+ "\r\nCreado: "+ fecha+ "\r\nModificado: "+fecha+"\r\nSeparador_campos: |\r\nRegistros_activos: 1\r\nRegistros_inactivos: 0\r\nRegistros_máximo: 3");
+                    escritor.write("Archivo:"+RutaArbol+"\r\nDescripción: Imagenes_usuario\r\nTipo: archivo_de_datos\r\nOrganización: Arbol Binario\r\nAutor: "+cadena+ "\r\nCreado: "+ fecha+ "\r\nModificado: "+fecha+"\r\nSeparador_campos: |\r\nRegistros_activos: 1\r\nRegistros_inactivos: 0\r\nRegistro raiz: 1");
                 }
                 
                 escritor.close();
@@ -169,7 +169,7 @@ public class NodoArbol {
         RandomAccessFile raf;
         try {
             raf = new RandomAccessFile(archivo,"rw");
-            raf.seek(regis*158);
+            raf.seek(regis*156);
             raf.writeBytes(num+"|"+String.format("%09d", rder)+"|"+String.format("%09d", rizq)+"|"+dato+"|"+(new Date()).toString()+"|"+1+ System.getProperty("line.separator"));
             
             raf.close();

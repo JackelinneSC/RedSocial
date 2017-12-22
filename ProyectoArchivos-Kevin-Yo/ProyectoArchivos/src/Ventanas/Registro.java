@@ -42,6 +42,7 @@ public class Registro extends javax.swing.JFrame {
         initComponents();
         archivos.createFolder("c:\\MEIA\\");
         archivos.createFolder("c:\\MEIA\\Fotografías");
+        archivos.createFolder("c:\\MEIA\\pictures");
         objSecuencial = new Secuencial("c:\\MEIA\\BitácoraUsuarios.txt");
     }
 

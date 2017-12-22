@@ -242,5 +242,22 @@ public class FileMethods {
            return false;       }
 
     }
+    public boolean CopiarUnArchivoImagen(String rutaArchivo, String rutaCopiaArchivo,String u){
+        try{
+           
+           FileInputStream fis = new FileInputStream(rutaArchivo); //inFile -> Archivo a copiar OJO El archivo ya debe venir con los \\ finales 
+           File archivoOriginal = new File(rutaArchivo);           //es decir c:\\user\\hackerman\\texto.txt\\
+           FileOutputStream fos = new FileOutputStream(rutaCopiaArchivo+u+ archivoOriginal.getName()); //outFile -> Copia del archivo
+           FileChannel inChannel = fis.getChannel(); 
+           FileChannel outChannel = fos.getChannel();
+           inChannel.transferTo(0, inChannel.size(), outChannel);
+           fis.close(); 
+           fos.close();
+           return true;
+           
+       }catch (IOException ioe) {
+           return false;       }
+
+    }
     
 }
